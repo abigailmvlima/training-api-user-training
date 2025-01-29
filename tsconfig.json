@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "target": "ES2020",
+    "module": "CommonJS",
+    "strict": true,
+    "sourceMap": true,
+    "outDir": ".build",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "rootDir": "src",
+    "resolveJsonModule": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.spec.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "./src/mocks/*.*",
+    "./src/**/tests/*.*",
+    "jest.config.ts"
+  ]
+}
