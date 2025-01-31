@@ -14,7 +14,6 @@ import dotenv from "dotenv";
 import express from "express";
 import morgan from "morgan";
 import routes from "./routes";
-import userRoutes from "./routes/users";
 
 // Carrega variáveis de ambiente do arquivo .env
 dotenv.config();
@@ -28,7 +27,6 @@ app.use(morgan("dev"));
 app.use(express.json());
 
 // Definição de rotas de usuários
-app.use("/api/users", userRoutes);
 app.use("/", routes);
 
 export default app;

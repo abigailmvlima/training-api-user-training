@@ -2,7 +2,10 @@ import { Request, Response } from "express";
 import { updateExistingUser } from "../../usercases/users/updateUser";
 
 // Função responsável por atualizar um usuário pelo ID
-export const updateUser = async (req: Request, res: Response): Promise<any> => {
+export const updateUserRoute = async (
+  req: Request,
+  res: Response
+): Promise<any> => {
   try {
     const response = await updateExistingUser(req.params.id, req.body);
     if (response.status === 404) {

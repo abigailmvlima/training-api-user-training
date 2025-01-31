@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { getUserById } from "../../usercases/users/getUserById";
 
 // Função responsável por buscar um usuário pelo ID
-export const getUserRoute = async (
+export const getUserByIdRoute = async (
   req: Request,
   res: Response
 ): Promise<any> => {
